@@ -14,7 +14,7 @@ async function searchSugg(){
     try{
         let query = getDom("search").value;
         //console.log(query)
-        let res = await fetch(`http://www.omdbapi.com/?apikey=e96044d2&s=${query}`);
+        let res = await fetch(`https://www.omdbapi.com/?apikey=e96044d2&s=${query}`);
         let data = await res.json();
         // console.log(data)
         // appendData(data.Search);
